@@ -1,0 +1,1 @@
+this program, written in JavaScript, generates cats based on the number given by the user.
