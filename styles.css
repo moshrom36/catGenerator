@@ -1,5 +1,6 @@
 :root {
-  --backgroundColor1: hsla(321, 100%, 0%, 0.96);
+  --backgroundColor1: hsla(321, 100%, 0%, 1);
+  --backgroundColor2: hsla(321, 100%, 0%, 0.64);
   --textColor1: hsla(272, 100%, 96%, 1);
 }
 
@@ -17,6 +18,11 @@ body {
   background-repeat: repeat;
 }
 
+#controls-div {
+  background-color: var(--backgroundColor2);
+  padding-bottom: 0.3rem;
+}
+
 h1 {
   font-size: 2.4rem;
   text-align: center;
@@ -25,6 +31,10 @@ h1 {
 
 #input-label {
   color: var(--textColor1);
+}
+
+#gen-input {
+  padding: 6px 0;
 }
 
 #gen-input,
@@ -46,13 +56,30 @@ hr {
   font-size: 1.24rem;
   padding: 0 6px;
   border: 1px solid black;
-  border-radius: 6px;
+  border-radius: 3px;
   margin: 0 auto;
+}
+
+button {
+  padding: 0.32rem 1rem;
+  border-radius: 6%;
+  margin: 0 6pt;
+}
+
+#gen-restart {
+  position: absolute;
+  right: 0;
 }
 
 @media (min-width: 570px) {
   body {
     background-image: url("backgrounds/ocelot1.png");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  #gen-input {
+    padding-bottom: 0;
   }
 
   #gen-output {
