@@ -3,22 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moshrom's Kittykatt Generator</title>
+    <title>Cat Creator</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="main-div">
-      <h1>Cat Generator</h1>
-      <div>
-        <p id="input-label">Please enter a number:</p>
-        <input id="gen-input" type="number" />
-        <hr />
-        <button id="gen-start" type="button">Generate</button>
-        <button id="gen-restart" type="button">Restart</button>
-      </div>
+    <div id="controls-div">
+      <h1>Cat Creator</h1>
+      <p id="input-label">Enter a number (less than 30,000):</p>
+      <input id="gen-input" type="number" />
       <hr />
-      <p id="gen-output"></p>
-      <script src="./index.js"></script>
     </div>
+    <button id="gen-start" type="button">Generate</button>
+    <button id="gen-restart" type="button">Restart</button>
+    <hr />
+    <p id="gen-output"></p>
+    <script src="./index.js"></script>
   </body>
 </html>
