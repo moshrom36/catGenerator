@@ -2,7 +2,7 @@ const genIn = document.getElementById("gen-input");
 const genOut = document.getElementById("gen-output");
 const genStart = document.getElementById("gen-start");
 const genRestartBtn = document.getElementById("gen-restart");
-const char = "🐈‍⬛";
+const cat1 = "🐈‍⬛";
 
 genStart.addEventListener("click", () => {
   startGens();
@@ -14,24 +14,23 @@ genRestartBtn.addEventListener("click", () => {
 
 function genRestart() {
   genOut.textContent = ``;
-  genIn.textContent = ``;
+  genIn.value = ``;
 }
 
 function startGens() {
   if (genIn.value == null || genIn.value == undefined || genIn.value == ``) {
     genOut.textContent = `Please enter a number!`;
-  } else if (genIn.value <= 0) {
-    genOut.textContent = `Please enter a number greater than 0.`;
-  } else if (genIn.value <= 19999) {
-    genOut.textContent = ``;
-    console.log(genIn.value);
+  } else if (genIn.value <= 1) {
+    genOut.textContent = `Please enter a number greater than 1.`;
+  } else if (genIn.value <= 29999) {
+    let generation = ``;
     for (let x = 1; x <= genIn.value; x++) {
-      console.log(genIn.value);
-      genOut.textContent += `${char} `;
+      generation += `${cat1} `;
     }
-    genIn.value = ``;
+    console.log(`You generated ${genIn.value} cats!`);
+    genOut.textContent = generation;
     genIn.textContent = ``;
   } else {
-    genOut.textContent = `Please enter a number smaller than 20,000.`;
+    genOut.textContent = `Please enter a number smaller than 30,000.`;
   }
 }
