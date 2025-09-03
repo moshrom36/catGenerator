@@ -1,1 +1,1 @@
-this program, written in JavaScript, generates cats based on the number given by the user.
+this program, written in HTML, CSS, and JavaScript, generates cats based on the number given by the user.
